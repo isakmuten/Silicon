@@ -1,0 +1,261 @@
+@import '../components/buttons';
+
+#faq {
+  padding-bottom: 100px;
+  background-color: white;
+  .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 540px;
+    }
+
+    .content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 768px) {
+        max-width: 540px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+      }
+
+        
+        
+
+      .left-column {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 20px;
+
+        @media screen and (max-width: 768px) {
+          max-width: 540px;
+          justify-content: center;
+          margin-bottom: 50px;
+        }
+
+        .box-1{
+          width: 416px;
+          h1 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 130%;
+            color: $gray-900;
+          }
+          p{
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: $gray-700;
+
+          }
+        }
+
+        .icon-boxes{
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 20px;
+          height: 166px;
+          
+
+          .box-2{
+          display: grid;
+          grid-template-rows: auto 1fr auto;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border: 1px solid rgb(216, 216, 216);
+          border-radius: 4%;
+          width: 196px;
+          height: 166px;
+          padding-left: 30px;
+          padding-right: 30px;
+          align-items: center;
+
+          
+            #phone-icon {
+              margin-bottom: 20px;
+              padding: 0px;
+            
+            }
+            p {
+              
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 160%;
+              color: $gray-700;
+            }
+            .nav-link-cf {
+                color: $primary;
+                font-size: 14px;
+                padding-right: 10px;
+                #arrow {
+                  padding-left: 10px;
+                }
+
+                &:hover{
+                  color: $secondary !important;
+                }
+            }
+          }
+          .box-3{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border: 1px solid rgb(216, 216, 216);
+            border-radius: 4%;
+            width: 196px;
+            height: 166px;
+            padding-left: 30px;
+            padding-right: 30px;
+            align-items: center;
+
+            #chat-icon {
+              padding: 0px;
+              margin-bottom: 20px;
+
+              }
+              p {
+                font-weight: 400;
+              font-size: 14px;
+              line-height: 160%;
+              color: $gray-700;
+              }
+              .nav-link-cf {
+                color: $success;
+                font-size: 14px;
+                #arrow {
+                  padding-left: 10px;
+                }
+                &:hover {
+                color: $success-dark !important;
+
+                }
+              }
+          }
+        }
+      }
+
+      .right-column {
+
+
+        .faq-boxes-container{
+          grid-template-rows: repeat(6, 1fr);
+          display: grid;  
+          gap: 20px;
+          height: 68px;
+
+
+
+
+          .faq-boxes {
+            @media screen and (max-width: 768px) {
+              max-width: 540px;
+              justify-content: center;
+            }
+            background-color: white;
+
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding-top: 0px;
+            align-items: top;
+            padding-right: 20px;
+            padding-left: 20px;
+            border: none;
+            border-radius: 10px;
+
+            width: 746px;
+            height: 68px;
+            box-shadow: 0px 5px 20px 0.1px rgb(207, 207, 207);
+            overflow: hidden;
+            transition: height 0.3s ease; 
+
+
+          }
+          
+          .faq-boxes.expanded {
+            height: 200px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 68px auto;
+            padding-top: 0px;
+            padding-top: 26px;
+            
+
+
+            h1{
+              padding-top:0px;
+            
+           
+              
+            }
+
+            #btn-dwn {
+              justify-self: right;
+              justify-content: center;
+              align-items: center;
+              padding-top: 0px;
+              margin-top: 0px;
+              margin-bottom: 200px;
+
+              
+            }
+
+          }
+
+            h1{
+              font-size: 16px;
+              font-weight: 900;
+              margin: 0;
+              padding-top: 26px;
+              
+            }
+            p {
+              padding-left: 52px;
+              color: $gray-600;
+              font-size: 20px;
+            }
+
+            #btn-dwn {
+              margin-top: 16px;
+              background: #F3F6FF;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 36px;
+              width: 36px;
+              border: none;
+              color: $gray-900;
+              transition: all 0.15s ease-in-out; 
+
+    
+              .fa-regular {
+                
+
+                font-weight: 500;
+                font-size: 13px;
+                justify-content: center;
+                display: flex;
+                text-decoration: none;
+                color: inherit;
+                }
+    
+                &:hover {
+                  text-decoration: none;
+                  background: $secondary;
+                  color: $white;
+                  .fa-regular {
+                    color: $white;
+                  }
+                }
+          }
+        }
+      }
+    }
+  }
+}

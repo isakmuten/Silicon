@@ -1,0 +1,145 @@
+@import '../components/buttons';
+* {
+  text-decoration: none !important;
+
+}
+#contact {
+  font-family: $font-manrope;
+  background: #F3F6FF;
+  // background: black;
+  height: 777px;
+  margin-top: -140px;
+  padding-top: 140px;
+
+  @include lg {
+      // padding-top: 40px;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  
+    @media screen and (max-width: 12200px) {
+      grid-template-columns:  1fr 1fr; 
+      max-width: 1320px; 
+      margin: 0 auto; 
+    }
+  
+
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+  .left-column{
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    #arrow {
+      padding-left: 15px;
+    }
+    #contact-us{
+      font-weight: 900;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .email-btn-container {
+      position: relative;
+      top: 60px;
+      z-index: 1;
+
+      
+        #btn-email {
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          height: 44px;
+          width: 44px;
+          border: none;
+          color: $gray-900;
+          transition: all 0.15s ease-in-out; 
+          height: 60px;
+          width: 60px;
+
+          .fa-regular {
+            font-weight: 500;
+            font-size: 23px;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            }
+
+            &:hover {
+              text-decoration: none;
+              background: $secondary;
+              color: $white;
+              .fa-regular {
+                color: $white;
+              }
+            }
+          }
+        }
+    
+    #email-title {
+      box-sizing: border-box;
+      width: 350px;
+      line-height: 40px;
+      margin-left: 100px;
+      z-index: -1;
+      height: 120px;
+  
+      h1 {
+        font-size: 24px;
+        font-weight: 900;
+        color: $gray-900;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray-700;
+        line-height: 25px;
+      }
+      .nav-link-cf {
+        font-weight: 600;
+      }
+    }
+
+    #career-title {
+      box-sizing: border-box;
+      width: 350px;
+      line-height: 40px;
+      margin-left: 100px;
+      z-index: -1;
+      height: 120px;
+
+      
+      h1 {
+        font-size: 24px;
+        font-weight: 900;
+        color: $gray-900;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray-700;
+        line-height: 25px;
+      }
+      .nav-link-cf {
+        font-weight: 600;
+      }
+    }
+
+
+  }
+}
+}

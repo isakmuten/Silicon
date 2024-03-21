@@ -1,0 +1,161 @@
+#howdoesitwork {
+  background: #f3f6ff;
+  padding-top: 40px;
+  
+img{
+  width: 100%;
+}
+
+.container {
+  padding-top: 40px;
+  .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+
+    h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    color: $gray-900;
+    }
+
+    @include lg {
+      text-align: left;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      padding: 0;
+    }
+    
+  }
+  .img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: "img1 img2 img3";
+    grid-template-rows: 1fr;
+    max-width: 1320px;
+    
+
+    margin: 0 auto; 
+
+    @media screen and (max-width: 768px) {
+    max-width: 540px;
+    
+    }
+
+    @include md {
+
+      gap: 50px;
+    }
+
+    @include lg {
+      align-items: flex-start;
+      gap: 100px;
+    }
+
+    .hdiw-img-1 {
+      margin-top: 70px;
+      justify-content: center;
+      gap: 120px;
+
+      #mobile-howdoesitwork-1 {
+        grid-area: img1;
+        opacity: 80%;
+      }
+    }
+
+    .hdiw-img-2 {
+      grid-area: img2;
+      position: relative;
+      margin-top: 70px;
+      justify-content: center;
+      gap: 120px;
+
+      #iPhone-12 {
+        position: absolute;
+        grid-area: img2;
+        scale: 115%;
+        top: 20px;
+
+      }
+
+      #mobile-howdoesitwork-2 {
+        position: absolute;
+
+        grid-area: img2;
+        scale: 105%;
+        z-index: 1;
+    @media screen and (max-width: 768px) {
+      scale: 100%;
+      z-index: 1;
+    }
+
+      }
+    }
+
+    .hdiw-img-3 {
+      margin-top: 70px;
+      justify-content: center;
+      gap: 120px;
+      #mobile-howdoesitwork-3 {
+        grid-area: img3;
+        opacity: 80%;
+        z-index: -1;
+
+      }
+    }
+  } 
+
+  .content-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 636px;
+    max-height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+      max-height: 140px;
+      max-width: 540px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      padding: 0px;
+    }
+  }
+
+    h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 140%;
+    color: $gray-900;
+
+    }
+
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: $gray-700;
+      padding-bottom: 40px;
+
+
+
+    }
+
+    @include lg {
+      text-align: left;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      padding: 0;
+    }
+  }
+}

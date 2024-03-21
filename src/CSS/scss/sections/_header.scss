@@ -1,0 +1,170 @@
+
+
+.full-header {
+    background-color: transparent;
+    position: relative;
+
+
+    
+    header {
+        padding: 1rem 0;
+
+  .container {
+      display: grid;
+      align-items: center;
+
+      gap: 30px;
+      grid-template-columns: 1fr auto;
+      grid-template-areas:    "logo btn-menu"
+                              "menu menu";
+
+      @include md {
+          grid-template-columns: 1fr auto auto;
+          grid-template-areas:    "logo theme-mode btn-menu";
+      }
+
+      @include lg {
+          grid-template-columns: auto 1fr auto auto;
+          grid-template-areas:    "logo menu theme-mode btn-account";
+      }
+
+      #logo {
+          grid-area: logo;
+      }
+  
+      #menu {
+          grid-area: menu;
+          display: none;
+          gap: 20px;
+          width: 100%;
+          position: fixed;
+          top:0;
+          left: 0;
+          height: 100vh;
+          z-index: 1;
+
+          @include lg {
+              height: 100%;
+              position: static;
+              background-color: $transparent;
+              display: flex !important;
+              align-items: center;
+          }
+
+          .menu-links {
+              display: grid;
+              gap: 20px;
+              padding: 50px 0;
+              text-align: center;
+
+              .nav-link {
+                  color: $gray-100;
+              }
+
+              @include lg {
+                  display: flex;
+                  padding: 0;
+                  text-align: left;
+
+                  .nav-link {
+                      color: $gray-800;
+                  }
+              }
+          }
+      }
+  
+      #theme-mode {
+          grid-area: theme-mode;
+          display: none;
+
+          @include md {
+              display: block;
+          }
+      }
+  
+      #btn-account {
+          grid-area: btn-account;
+          display: none;
+
+          @include lg {
+              display: block;
+          }
+      }
+  
+      #btn-menu {
+          grid-area: btn-menu;
+          display: block;
+          z-index: 0;
+          padding: 18px 22px;
+          font-size: 2em;
+          background: $transparent;
+          border: none;
+
+          @include lg {
+              display: none;
+          }
+      }
+
+  }
+
+}
+
+.contact-header {
+    // background: #F3F6FF;
+    background: transparent;
+  }
+
+  .full-second-header {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-bottom: 30px;
+
+    .second-header {
+        margin-left: 310px;
+        height: 26px;
+    
+    .second-menu-links .nav-link {
+       
+        margin-right: 10px;
+        color: $gray-600;
+        text-decoration: none;
+        font-size: 14px;
+
+    }
+    #small-house {
+        font-size: 13px;
+        margin-right: 5px;
+        color: $gray-600;
+
+    }
+      #small-arrow {
+        font-size: 10px;
+        margin-right: 10px;
+        color: $gray-600;
+        }
+        .nav-link-home {
+            color: $gray-600;
+            text-decoration: none;
+            font-size: 14px; 
+            margin-right: 10px;
+        
+            &:hover {
+                color: $gray-900;
+            }
+        }
+        
+        .nav-link-current {
+            color: $primary;
+            text-decoration: none; 
+            font-size: 14px; 
+        
+            &:hover {
+                color: $secondary; 
+            }
+        }
+        
+    }
+
+  }
+
+}

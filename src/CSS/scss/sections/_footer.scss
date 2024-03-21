@@ -1,0 +1,90 @@
+#footer {
+  background-color: white;
+  height: 578px;
+  .container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 70px;
+    justify-content: center;
+    height: 250px;
+
+    .content {
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        justify-self: center;
+      }
+      .menu-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        width: 534px;
+
+        .nav-link {
+          justify-self: center;
+          
+        }
+
+      }
+      .download-app {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        justify-self: center;
+      }
+    }
+    .socials {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 224px;
+      height: 44px;
+      
+      justify-self: center;
+      justify-items: center;
+      align-items: center;
+      gap: 10px;
+
+      .facebook {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 14px;
+        background-color: #eff2fc;
+      }
+      .twitter{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 14px;
+        background-color: #eff2fc;
+      }
+      .instagram {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 14px;
+        background-color: #eff2fc;
+      }
+    .youtube {
+      border: none;
+        border-radius: 5px;
+        padding: 10px 14px;
+        background-color: #eff2fc;
+    }
+
+    }
+    .copyright {
+      width: 856px;
+      height: 44px;
+      display: flex;
+      justify-self: center;
+      p {
+      text-align: center;
+      font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+color: $gray-600;
+      }
+    }
+  }
+}

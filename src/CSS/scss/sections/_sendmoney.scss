@@ -1,0 +1,172 @@
+#sendmoney {
+background: $gradient-background;
+padding-bottom: 100px;
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 130%;
+  color: $gray-900;
+  max-width: 416px;
+  }
+    #p-1,
+    #p-2,
+    #p-3 {
+      font-size: 16px;
+      line-height: 160%;
+      font-weight: 400;
+      color: $gray-700;
+    }
+  .container {
+  max-width: 1076px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+  }
+
+    .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: "content img content img";
+    }
+
+    .text-row-1 {
+      
+      justify-self: left;
+      align-self: center;
+      @media screen and (max-width: 768px) {
+        h1{
+          font-size: 24px;
+        }
+        padding-left: 40px;
+      }
+
+      h1 {
+        padding-bottom: 20px;
+      }
+      #p-3{
+        padding-bottom: 20px;
+
+
+      }
+
+      #check-logo{
+        padding-right: 10px;
+      }
+      .learn-btn {
+
+        #btn-theme {
+          max-height: 44px;
+          max-width: 159px;
+          padding: 11px 28px;
+
+        }
+
+      }
+    }
+
+    #sendmoneyimg {
+    padding-top: 00px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      justify-self: center;
+      align-self: center;
+      padding-right: 40px;
+    }
+    }
+    #contacts {
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        justify-self: center;
+        align-self: top;
+        padding-left: 40px;
+      }
+    }
+
+    .text-row-2{
+      justify-self: left;
+      align-self: center;
+
+      @media screen and (max-width: 768px) {
+        h1{
+          font-size: 24px;
+        }
+
+        p{
+          padding-bottom: 0px;
+        }
+
+          justify-self: center;
+          align-self: center;
+
+        padding-right: 40px;
+
+
+        .learn-btn{
+          padding-top: 0px;
+          margin-top: 0px;
+        }
+      }
+
+
+      h1{
+        padding-bottom: 20px;
+      }
+
+      .logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 15px;
+        .logo-container {
+          height: 60px;
+          width: 60px;
+          background: #f3f3fe;
+          border: none;
+          border-radius: 20%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          z-index: -0;
+        }
+        #small-logo{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          height: 28px;
+          width: 28px;
+          margin-top: 16px;
+        
+        }
+      }
+
+      .text-row-2-containers{
+        .content-box{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+      }
+
+      .learn-btn {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        #btn-theme {
+          max-height: 44px;
+          max-width: 159px;
+          padding: 11px 28px;
+
+        }
+
+      }
+
+    }
+
+
+
+  }
+
+}

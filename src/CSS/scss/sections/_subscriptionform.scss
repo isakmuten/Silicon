@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.sub-form {
+
+  .input-form{
+    font-family: $font-manrope;
+    display: grid;
+    grid-template-columns: 332px 142px;
+    width: 477px;
+    border: none;
+  
+
+    .input {
+      width: 332px;
+      height: 52px;
+      border: 1px solid #d4d7e5;
+      outline: none;
+      border-right: none;
+      padding-left: 20px;
+      border-radius: 10px 0px 0px 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .sub-btn {
+
+      width: 142px;
+      height: 52px;
+      border: 1px solid $primary;
+      border-radius: 0px 10px 10px 0px;
+
+
+      border-left: none;
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+}
+
+
